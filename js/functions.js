@@ -26,7 +26,7 @@ $( '.modifier' ).on( 'change', function(){
     const dealer = $( '#dealer').is(':checked');
     const han = parseInt( $( '#han' ).val() );
     const fu = parseInt( $( '#fu' ).val() );
-    const honba = parseInt( $( '#honba' ).val() );
+    const honba = parseInt( $( '#honba' ).val() ) || 0;
     let basicPoints = fu * Math.pow(2, han + 2);
 
 
